@@ -305,26 +305,26 @@ export default function App() {
         )}
       </main>
 
-      {/* Subtle Footer with Metadata and Architecture Reference */}
-      <footer className="border-t border-slate-900 bg-slate-950 py-4 px-6 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <div className="flex items-center gap-2">
-          <span>GridPulse Terminal</span>
-          <span aria-hidden="true">·</span>
-          <span>US Electricity Wholesale & Commodity Power Analytics</span>
-          <span aria-hidden="true">·</span>
-          <span>D3.js Visualization Engine</span>
+      {/* Subtle Footer with Metadata, Attribution and Architecture Reference */}
+      <footer className="border-t border-[#1e2638] bg-[#070a0f] py-4 px-6 text-xs text-slate-400 font-mono flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+          <span className="text-[#ff9900] font-bold tracking-wider uppercase">GRIDPULSE TERMINAL</span>
+          <span aria-hidden="true" className="text-slate-600">·</span>
+          <span>US Electricity Wholesale & Commodity Analytics</span>
+          <span aria-hidden="true" className="text-slate-600">·</span>
+          <span className="text-amber-400 font-medium">Developed by Kevin Shalu</span>
         </div>
         <div className="flex items-center gap-3">
           <button
             onClick={() => setIsArchitectureOpen(true)}
-            className="hover:text-slate-300 transition-colors cursor-pointer"
+            className="hover:text-[#ff9900] text-slate-400 transition-colors cursor-pointer"
           >
             AWS Architecture Specs
           </button>
-          <span aria-hidden="true">·</span>
+          <span aria-hidden="true" className="text-slate-600">·</span>
           <button
             onClick={() => setIsTraderGuideOpen(true)}
-            className="hover:text-slate-300 transition-colors cursor-pointer"
+            className="hover:text-cyan-400 text-slate-400 transition-colors cursor-pointer"
           >
             Trader's Primer
           </button>

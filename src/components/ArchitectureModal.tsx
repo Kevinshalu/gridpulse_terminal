@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Cpu, Database, Network, ArrowRight, ShieldCheck, Zap, Layers, Server } from 'lucide-react';
+import { X, Cpu, Database, Network, ArrowRight, Zap, Layers, Server } from 'lucide-react';
 
 interface ArchitectureModalProps {
   isOpen: boolean;
@@ -137,28 +137,6 @@ export const ArchitectureModal: React.FC<ArchitectureModalProps> = ({
                 <code>Z = (RTM_Price - μ_30d) / σ_30d; if (Z &gt; threshold) publish_alert();</code>
               </div>
             </div>
-          </div>
-
-          {/* Portfolio & Resume Talking Points */}
-          <div className="bg-emerald-950/20 border border-emerald-500/30 p-4 rounded-lg space-y-2">
-            <div className="flex items-center gap-2 text-xs font-semibold text-emerald-300">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Key Portfolio Highlights For Energy Trading & Financial Engineering Roles</span>
-            </div>
-            <ul className="text-xs text-slate-300 space-y-1.5 list-disc pl-5">
-              <li>
-                <strong>High-Frequency Market Streaming:</strong> Designed a reactive event-driven client using D3.js and WebSockets capable of updating thousands of nodal price components without DOM layout thrashing.
-              </li>
-              <li>
-                <strong>Market Fundamentals Modeling:</strong> Implemented real-time Spark Spread valuation with adjustable heat rates (Btu/kWh) to determine CCGT vs peaker dispatch status under varying Henry Hub natural gas feedstock prices.
-              </li>
-              <li>
-                <strong>Nodal Locational Marginal Pricing (LMP):</strong> Decomposed nodal wholesale prices into System Marginal Energy (MEC), Transmission Congestion (MCC), and Marginal Losses (MLC).
-              </li>
-              <li>
-                <strong>Statistical Forecasting:</strong> Rendered fan charts showing P10, P50, and P90 confidence intervals for forward peak demand and DART spread arbitrage.
-              </li>
-            </ul>
           </div>
         </div>
       </div>
