@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="border-b border-[#1e2638] bg-[#070a0f] sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-12 flex items-center justify-between gap-4 font-mono">
+      <div className="max-w-[1720px] w-full mx-auto px-4 sm:px-6 xl:px-8 h-12 flex items-center justify-between gap-4 font-mono">
         {/* Zone 1: Single text element wordmark */}
         <div className="flex items-center gap-3 shrink-0">
           <button 
